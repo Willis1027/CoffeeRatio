@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="content">
+      <img class="coffeeBar" src="./images/coffeeBar.png" alt="" />
+      <div class="talkBox">
+        <p>{{coffeedescribe}}</p>
+      </div>
+      <div class="cup">
+        <img src="./images/cup.png" alt="" />
+        <div class="cupFull" :style="styleObject"></div>
+        <div class="coffeeRatioTable">
+          <h2>Coffee 成分</h2>
+          <ul>
+            <li v-for="coffeeRatio in coffeeRatios">
+              <div
+                class="color"
+                :style="{background:coffeeRatio['顏色']}"
+              ></div>
+              <div class="Ratio">{{coffeeRatio['成分']}}</div>
+              <div class="Ratio">{{coffeeRatio['比例']}}</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="chooseArea">
+        <li v-for="coffee in coffees" @click="changeCoffee">
+          {{coffee['name']}}
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
