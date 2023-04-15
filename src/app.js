@@ -112,6 +112,7 @@ export default {
       styleObject: {
         background: "",
       },
+      isActive:false,
     };
   },
   methods: {
