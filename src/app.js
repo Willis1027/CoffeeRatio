@@ -1,6 +1,7 @@
 export default {
   data() {
     return {
+      isShow: true,
       selectedCoffee: "",
       coffeedescribe: "",
       coffeeRatios: [],
@@ -63,12 +64,12 @@ export default {
           name: "摩卡咖啡",
           ratio:
             "linear-gradient(to top,#4F200D 0%,#4F200D 20%,#E4C988 20%,#E4C988 30%,#F5F5F5 30%,#F5F5F5 80%,#FFF3E2 80%)",
-            ratioData: [
-              { 成分: "奶泡", 比例: "20%", 顏色: "#FFF3E2" },
-              { 成分: "牛奶", 比例: "50%", 顏色: "#F5F5F5" },
-              { 成分: "巧克力糖漿", 比例: "10%", 顏色: "#E4C988" },
-              { 成分: "濃縮咖啡", 比例: "20%", 顏色: "#4F200D" },
-            ],
+          ratioData: [
+            { 成分: "奶泡", 比例: "20%", 顏色: "#FFF3E2" },
+            { 成分: "牛奶", 比例: "50%", 顏色: "#F5F5F5" },
+            { 成分: "巧克力糖漿", 比例: "10%", 顏色: "#E4C988" },
+            { 成分: "濃縮咖啡", 比例: "20%", 顏色: "#4F200D" },
+          ],
           describe:
             "同屬於義式花式咖啡的一種，基底是濃縮咖啡，與巧克力糖漿、鮮奶、奶泡搭配比例為1：0.5：1.5：1，巧克力通常也可以白巧克力的形式添加，摩卡咖啡最明顯的風味就是可可的微苦焦香，有些花俏的摩卡咖啡還可裝飾奶油、可可粉和棉花糖，裝飾在奶泡上，用來加強咖啡的特色與香氣。 ",
         },
@@ -76,11 +77,11 @@ export default {
           name: "焦糖瑪奇朵",
           ratio:
             "linear-gradient(to top,#4F200D 0%,#4F200D 20%,#B99B6B 20%,#B99B6B 90%,#1A120B 90%)",
-            ratioData: [
-              { 成分: "焦糖", 比例: "10%", 顏色: "#1A120B" },
-              { 成分: "奶泡+糖漿", 比例: "70%", 顏色: "#B99B6B" },
-              { 成分: "濃縮咖啡", 比例: "20%", 顏色: "#4F200D" },
-            ],
+          ratioData: [
+            { 成分: "焦糖", 比例: "10%", 顏色: "#1A120B" },
+            { 成分: "奶泡+糖漿", 比例: "70%", 顏色: "#B99B6B" },
+            { 成分: "濃縮咖啡", 比例: "20%", 顏色: "#4F200D" },
+          ],
           describe:
             "義大利文的意思是烙印，就像是甜蜜的印記般，包含濃縮咖啡、香草以及焦糖，一次可品嚐到三種香氣。一般來說，喝之前不能攪拌，所以唇上會是香甜的奶泡以及覆蓋在上的濃稠焦糖醬，接著是香草氣息的奶泡，最後來到濃郁回甘的濃縮咖啡，不過，與拿鐵咖啡和卡布奇諾相較，焦糖瑪奇朵的濃縮咖啡比例較高。 ",
         },
@@ -88,11 +89,11 @@ export default {
           name: "愛爾蘭咖啡",
           ratio:
             "linear-gradient(to top,#4F200D 0%,#4F200D 20%,#FFA559 20%,#FFA559 30%,#FFFBEB 30% , #FFFBEB 60%,transparent 60%)",
-            ratioData: [
-              { 成分: "鮮奶油", 比例: "30%", 顏色: "#FFFBEB" },
-              { 成分: "愛爾蘭威士忌", 比例: "10%", 顏色: "#FFA559" },
-              { 成分: "濃縮咖啡", 比例: "20%", 顏色: "#4F200D" },
-            ],
+          ratioData: [
+            { 成分: "鮮奶油", 比例: "30%", 顏色: "#FFFBEB" },
+            { 成分: "愛爾蘭威士忌", 比例: "10%", 顏色: "#FFA559" },
+            { 成分: "濃縮咖啡", 比例: "20%", 顏色: "#4F200D" },
+          ],
           describe:
             "有人說愛爾蘭咖啡是調酒不是咖啡，事實上也說得通，因為愛爾蘭咖啡本身就是加上威士忌，除了咖啡香還有酒香。愛爾蘭咖啡的作法通常是先倒入糖，再以威士忌裡的酒精燃燒來略微焦化糖汁，接著是濃縮咖啡，最後在加上鮮奶油，迷人的香氣在空氣中飄散進入鼻腔，互相撞擊調和，最適合冬日來上暖暖一杯。 ",
         },
@@ -100,11 +101,11 @@ export default {
           name: "維也納咖啡",
           ratio:
             "linear-gradient(to top,#4F200D 0%,#4F200D 20%,#E4C988 20%,#E4C988 30%,#FFFBEB 30%,#FFFBEB 50%)",
-            ratioData: [
-              { 成分: "鮮奶油", 比例: "20%", 顏色: "#FFFBEB" },
-              { 成分: "巧克力糖漿", 比例: "10%", 顏色: "#E4C988" },
-              { 成分: "濃縮咖啡", 比例: "20%", 顏色: "#4F200D" },
-            ],
+          ratioData: [
+            { 成分: "鮮奶油", 比例: "20%", 顏色: "#FFFBEB" },
+            { 成分: "巧克力糖漿", 比例: "10%", 顏色: "#E4C988" },
+            { 成分: "濃縮咖啡", 比例: "20%", 顏色: "#4F200D" },
+          ],
           describe:
             "維也納咖啡如其名，是奧地利維也納人最喜愛的咖啡喝法。首先在溫熱的咖啡杯底部撒上薄薄一層砂糖或細冰糖，接著倒入濃縮咖啡，並裝飾新鮮奶油，口感彷彿三重奏般，在細緻的糖漿中品飲濃縮咖啡的苦勁與濃郁香氣，最後是融合在咖啡中的溫潤鮮奶油滋味；至於美式維也納咖啡，還添加巧克力糖漿，熱量當然也更高了！  ",
         },
@@ -112,11 +113,12 @@ export default {
       styleObject: {
         background: "",
       },
-      isActive:false,
+      isActive: false,
     };
   },
   methods: {
     changeCoffee(e) {
+      this.isShow = false
       let name = e.target.innerHTML;
       this.selectedCoffee = name;
       let filterratio = this.coffees.filter(function (value) {
@@ -125,6 +127,9 @@ export default {
       this.styleObject.background = filterratio[0]["ratio"];
       this.coffeedescribe = filterratio[0]["describe"];
       this.coffeeRatios = filterratio[0]["ratioData"];
+      setTimeout(() => {
+      this.isShow = true
+      }, 100)
     },
   },
 };
